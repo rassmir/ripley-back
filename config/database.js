@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize')
 require('dotenv').config()
 
-const ClientModel = require('../models/clients')
-const AverageModel = require('../models/averages')
+const ClientModel = require('../models/client')
+const AverageModel = require('../models/average')
 
 const sequelize = new Sequelize(
     process.env.DATABASE, process.env.USERNAME, process.env.PASSWORD, {
