@@ -29,8 +29,7 @@ router.delete('/:clientId', (req, res, next) => {
         where: {
             id: req.params.clientId
         }
-    })
-        .then(client => {
+    }).then(client => {
             if (!client) {
                 return res.status(404).send({error: 'Usuario no encontrado'});
             }
